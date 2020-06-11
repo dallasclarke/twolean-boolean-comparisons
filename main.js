@@ -2,7 +2,63 @@
  * YOUR CODE BELOW! *
  ********************/
 
+ function moreThan5(one) {
+  return one > 5;
+ }
 
+ function topScore(score, highScore) {
+   return score > highScore
+ }
+
+ function isInDanger(grade) {
+   
+  return grade >= 60 && grade <=71;
+ }
+
+ function isCoasting(grade) {
+   return grade >= 72 && grade <= 83;
+ }
+
+ function isSucceeding(grade) {
+   return grade >= 84 && grade <= 92;
+ }
+
+ function isFailing(grade) {
+   return grade < 60;
+ }
+
+ function isAcing(grade) {
+   return grade > 92;
+ }
+
+ function isStudent(str) {
+  return str === 'student';
+ }
+
+ function isTeacher(str) {
+   return str === 'teacher';
+ }
+
+ function isAdmin(str) {
+   return str === 'admin';
+ }
+
+ function isElementary(str) {
+   return str === 'elementary';
+ }
+
+ function areDifferentPeople(name1, name2) {
+   return name1 !== name2;
+ }
+
+ function isMiddleSchoolTeacher(str, num) {
+   return str && num === 'teacher'  
+   
+ }
+
+ function notAnElementarySchoolAdministrator(level, role) {
+   return level !== role;
+ }
 
 
 
@@ -57,7 +113,7 @@ if (typeof isElementary === 'undefined') {
   isElementary = undefined;
 }
 
-if (typeof differentPeople === 'undefined') {
+if (typeof areDifferentPeople === 'undefined') {
   differentPeople = undefined;
 }
 
@@ -82,7 +138,7 @@ module.exports = {
   isTeacher,
   isAdmin,
   isElementary,
-  differentPeople,
+  areDifferentPeople,
   notAnElementarySchoolAdministrator,
   isMiddleSchoolTeacher,
 }
